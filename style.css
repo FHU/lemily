@@ -24,6 +24,7 @@ body {
 	line-height: 1.45;
     text-align: center;
     padding: 10px;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -65,9 +66,66 @@ p {
 .faith, .future {
     background-color: var(--light-gray);
     color: var(--black);
+    overflow: hidden;
 }
 
 .family {
     background-color: var(--dark_gray);
     color: var(--black);
+    overflow: hidden;
 }
+
+.box {
+    box-shadow: 2px 4px 5px rbga(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: all 0.5s ease-in;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.faith .text, .future .text {
+    background-image: linear-gradient(0deg , var(--maroon), var(--light-gray));
+    width: 108%;
+    height: 200%;
+    transform: skew(-11deg, 7deg);
+    margin-top: -7%;
+    margin-left: -5%;
+  }
+
+  .faith .text p, .faith .text h2, .future .text p, .future .text h2, .card-btn {
+    font-size: 0.8em;
+    transform: skew(11deg, -7deg);
+    padding: 5%;
+    overflow: hidden;
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .family .text {
+    background-image: linear-gradient(0deg , var(--maroon), var(--dark_gray));
+    width: 108%;
+    height: 200%;
+    transform: skew(11deg, -7deg);
+    margin-top: -7%;
+    margin-right: -10%;
+  }
+
+  .family .text p, .family .text h2, .faith .card-btn {
+    font-size: 0.8em;
+    transform: skew(-11deg, 7deg);
+    padding: 5%;
+    overflow: hidden;
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .faith .text h2, .family .text h2, .future .text h2 {
+    margin-top: 13%;
+    font-size: 2rem;
+  }
