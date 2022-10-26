@@ -25,14 +25,15 @@ body {
     text-align: center;
     padding: 10px;
     overflow-x: hidden;
-    text-shadow: 0 0 3px var(--black), 0 0 5px var(--maroon);
+    text-shadow: 0 0 3px var(--black), 0 0 5px var(--black);
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h2 {
+    font-size: 3rem;
     color: var(--maroon);
     text-shadow: 0 0 3px var(--light-white), 0 0 5px var(--light-gray);
 }
@@ -41,8 +42,18 @@ p {
     font-family: "Nunito Sans", sans-serif;
 }
 
+.weAre {
+    width: 100%;
+    overflow: hidden;
+}
+
+.weAre img {
+    height: fit-content;
+    width: 100%;
+}
+
 .grid {
-    padding: 50px;
+    padding: 30px 50px;
     display: grid;
     gap: 1.5rem;
 	grid-template-rows: repeat(1fr, 3);
@@ -108,38 +119,50 @@ p {
   }
 
   .faith .text p, .faith .text h2, .future .text p, .future .text h2, .card-btn {
-    font-size: 0.8em;
+    font-size: 0.9em;
     transform: skew(11deg, -7deg);
-    padding: 5%;
+    padding: 2%;
+    padding-left: 5%;
     overflow: hidden;
     width: 90%;
     margin: 10px 0;
   }
 
   .family .text {
-    background-image: linear-gradient(0deg , var(--maroon), var(--dark_gray));
+    background-image: linear-gradient(0deg , var(--dark_gray), var(--maroon));
     width: 108%;
     height: 200%;
     transform: skew(11deg, -7deg);
     margin-top: -7%;
-    margin-right: -10%;
     border: 2px solid var(--maroon);
   }
 
-  .family .text p, .family .text h2, .faith .card-btn {
+
+  .family .text p, .family .text h2, .family .card-btn {
     font-size: 0.8em;
     transform: skew(-11deg, 7deg);
-    padding: 5%;
+    padding: 2%;
+    padding-left: 5%;
     overflow: hidden;
     width: 90%;
     margin: 10px 0;
+    color: var(--light-white);
+    text-shadow: 0 0 3px var(--black), 0 0 5px var(--black);
   }
 
   .faith .text h2, .family .text h2, .future .text h2 {
     margin-top: 13%;
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .faith .image, .future .image {
     margin-left: 5%;
+  }
+
+  .mission {
+    margin: 30px auto;
+  }
+
+  .mission h1 {
+    margin-bottom: 20px;
   }
