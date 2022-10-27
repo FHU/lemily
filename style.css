@@ -186,9 +186,10 @@ p {
 
 .circle:hover {
     cursor: pointer;
-    background: var(--white);
+    background: var(--light-white);
     transform: translateY(-10px);
 }
+
 
 /* Animations */
 
