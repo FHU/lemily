@@ -23,7 +23,6 @@ body {
 	font-size: 1.5rem;
 	line-height: 1.45;
     text-align: center;
-    padding: 10px;
     overflow-x: hidden;
     text-shadow: 0 0 3px var(--black), 0 0 5px var(--black);
 }
@@ -46,6 +45,7 @@ p {
 /* We Are */
 
 .weAre {
+    padding: 40px 0;
     width: 100%;
     overflow: hidden;
 }
@@ -154,6 +154,41 @@ p {
 }
 
 
+/* Stats */
+
+.stats {
+    padding: 40px 0;
+    background-color: var(--light-gray);
+    color: var(--maroon);
+    text-shadow: 0 0 3px var(--light-white), 0 0 5px var(--light-gray);
+}
+
+.circles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 150px;
+    width: 200px;
+    background-image: linear-gradient(to bottom right, var(--light-white), var(--maroon));
+    color: var(--black);
+    text-shadow: 0 0 3px var(--light-white), 0 0 5px var(--light-gray);
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px var(--black);
+    font-size: 2.5rem;
+}
+
+.circle:hover {
+    cursor: pointer;
+    background: var(--white);
+    transform: translateY(-10px);
+}
 
 /* Animations */
 
@@ -179,6 +214,7 @@ p {
 
 .mission {
     margin: 30px auto;
+    padding: 40px 0;
 }
 
 .mission h1 {
