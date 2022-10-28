@@ -173,7 +173,7 @@ p {
     width: 200px;
     background-image: linear-gradient(to bottom right, var(--light-white), var(--light-gray));
     color: var(--black);
-    text-shadow: 0 0 3px var(--light-white), 0 0 5px var(--light-gray);
+    text-shadow: none;
     box-shadow: 5px 5px 20px var(--black);
     font-size: 2.5rem;
     transition: all 0.2s ease-in;
