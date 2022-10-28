@@ -17,14 +17,13 @@
 }
 
 body {
-	background-color: var(--maroon);
+	background-color: var(--white);
     color: var(--light-white);
 	font-family: "Khand", sans-serif;
 	font-size: 1.5rem;
 	line-height: 1.45;
     text-align: center;
     overflow-x: hidden;
-    text-shadow: 0 0 3px var(--black), 0 0 5px var(--black);
 }
 
 h1 {
@@ -33,8 +32,6 @@ h1 {
 
 h2 {
     font-size: 3rem;
-    color: var(--maroon);
-    text-shadow: 0 0 3px var(--light-white), 0 0 5px var(--light-gray);
 }
 
 p {
@@ -48,13 +45,13 @@ p {
     padding: 40px 0;
     width: 100%;
     overflow: hidden;
+    color: var(--maroon);
+    text-shadow: 0 0 3px var(--light-white), 0 0 5px var(--light-white);
 }
 
 .weAre img {
     height: 20vh;
     width: fit-content;
-    border-radius: 10px;
-    box-shadow: 5px 5px 20px var(--black);
 }
 
 
@@ -65,15 +62,19 @@ p {
     display: grid;
     gap: 1.5rem;
 	grid-template-rows: repeat(1fr, 3);
+    background-color: var(--dark_gray);
 }
 
 .flex {
     display: flex;
-    padding: 20px;
+    position: relative;
+    justify-content: end;
 }
 
-.text {
-    flex-basis: 60%;
+.flex2 {
+    display: flex;
+    position: relative;
+    justify-content: start;
 }
 
 .image {
@@ -81,34 +82,26 @@ p {
 }
 
 .image img {
-    width: 90%;
-    box-shadow: 5px 5px 20px var(--black);
-    border-radius: 10px;
+    width: 115%;
+    height: 100%;
 }
 
-.faith, .future {
-    background-color: var(--light-gray);
+.faith, .family, .future {
     overflow: hidden;
-    padding-left: 23px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px var(--light-gray);
 }
 
-.family {
-    background-color: var(--dark_gray);
-    overflow: hidden;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 10px var(--light-gray);
-}
 
 .faith .text, .future .text {
-    background-image: linear-gradient(0deg , var(--maroon), var(--light-gray));
-    width: 108%;
+    flex-basis: 60%;
+    padding: 10px;
+    padding-left: 40px;
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(182deg, var(--maroon) 0 50%, var(--light-white) 50% 100%);
     height: 200%;
-    transform: skew(-11deg, 7deg);
+    width: 70%;
+    transform: skew(-11deg, 7deg) translateX(-10%);
     margin-top: -7%;
-    margin-left: -5%;
     border: 2px solid var(--maroon);
 }
 
@@ -120,27 +113,32 @@ p {
     overflow: hidden;
     width: 90%;
     margin: 10px 0;
+    text-shadow: 0 0 3px var(--black), 0 0 5px var(--black);
 }
 
 .family .text {
-    background-image: linear-gradient(0deg , var(--dark_gray), var(--maroon));
-    width: 108%;
+    flex-basis: 60%;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    background-image: linear-gradient(7deg, var(--light-white) 0 55%, var(--maroon) 55% 100%);
+    /* background-image: linear-gradient(355.5deg, var(--light-white) 0 50%, var(--maroon) 50% 100%); */
     height: 200%;
-    transform: skew(11deg, -7deg);
+    width: 70%;
+    transform: skew(11deg, -7deg) translateX(10%);
     margin-top: -7%;
     border: 2px solid var(--maroon);
 }
 
 
 .family .text p, .family .text h2, .family .card-btn {
-    font-size: 0.8em;
+    font-size: 0.9em;
     transform: skew(-11deg, 7deg);
     padding: 2%;
     padding-left: 5%;
     overflow: hidden;
     width: 90%;
     margin: 10px 0;
-    color: var(--light-white);
     text-shadow: 0 0 3px var(--black), 0 0 5px var(--black);
 }
 
@@ -149,18 +147,15 @@ p {
     font-size: 3rem;
 }
 
-.faith .image, .future .image {
-    margin-left: 5%;
-}
 
 
 /* Stats */
 
 .stats {
     padding: 40px 0;
-    background-color: var(--light-gray);
-    color: var(--maroon);
-    text-shadow: 0 0 3px var(--light-white), 0 0 5px var(--light-gray);
+    background: var(--maroon);
+    text-shadow: 0 0 3px var(--black), 0 0 5px var(--black);
+    
 }
 
 .circles {
@@ -176,18 +171,18 @@ p {
     justify-content: center;
     height: 150px;
     width: 200px;
-    background-image: linear-gradient(to bottom right, var(--light-white), var(--maroon));
+    background-image: linear-gradient(to bottom right, var(--light-white), var(--light-gray));
     color: var(--black);
     text-shadow: 0 0 3px var(--light-white), 0 0 5px var(--light-gray);
-    border-radius: 10px;
     box-shadow: 5px 5px 20px var(--black);
     font-size: 2.5rem;
+    transition: all 0.2s ease-in;
 }
 
 .circle:hover {
     cursor: pointer;
-    background: var(--light-white);
     transform: translateY(-10px);
+    background: var(--light-white);
 }
 
 
@@ -214,10 +209,12 @@ p {
 /* Mission */
 
 .mission {
-    margin: 30px auto;
-    padding: 40px 0;
+    padding: 70px;
+    color: var(--black);
 }
 
 .mission h1 {
     margin-bottom: 20px;
+    color: var(--maroon);
+    text-shadow: 0 0 3px var(--light-white), 0 0 5px var(--light-white);
 }
