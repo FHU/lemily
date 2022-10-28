@@ -185,6 +185,10 @@ p {
     background: var(--light-white);
 }
 
+.one p {
+    font-size: 0.9rem;
+}
+
 
 /* Animations */
 
@@ -204,6 +208,10 @@ p {
 
 .box2.show {
     transform: translateX(0);
+}
+
+.hidden {
+    display: none;
 }
 
 /* Mission */
