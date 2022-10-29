@@ -118,29 +118,30 @@ p {
 
 .family .text {
     flex-basis: 60%;
-    padding: 10px;
+    padding: 20px;
     position: absolute;
     right: 0;
     background-image: linear-gradient(7deg, var(--light-white) 0 55%, var(--maroon) 55% 100%);
     /* background-image: linear-gradient(355.5deg, var(--light-white) 0 50%, var(--maroon) 50% 100%); */
-    height: 200%;
+    height: 240%;
     width: 70%;
-    transform: skew(14deg, -22deg) translateX(10%);
-    margin-top: -7%;
+    transform: skew(7deg, -20deg) translateX(10%);
+    margin-top: -10%;
     border: 2px solid var(--maroon);
 }
 
 
 .family .text p, .family .text h2, .family .card-btn {
     font-size: 0.9em;
-    transform: skew(-11deg, 7deg);
-    padding: 2%;
+    transform: skew(-7deg, 20deg);
+    padding-top: 4%;
     padding-left: 5%;
     overflow: hidden;
     width: 90%;
     margin: 10px 0;
     text-shadow: 0 0 3px var(--black), 0 0 5px var(--black);
 }
+
 
 .faith .text h2, .family .text h2, .future .text h2 {
     margin-top: 13%;
@@ -152,10 +153,6 @@ p {
     visibility: visible;
 }
 
-.box p {
-    /* color: orange; */
-    
-}
 
 
 /* Stats */

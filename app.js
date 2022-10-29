@@ -5,7 +5,6 @@ const box = document.querySelectorAll(".box2");
 window.addEventListener( 'scroll', checkboxes);
 window.addEventListener( 'scroll', checkbox);
 
-window.addEventListener('mouseover')
 const circle1 = document.querySelector(".one");
 circle1.addEventListener('click', function() {
     circle1.children[0].classList.toggle("hidden");
@@ -65,5 +64,3 @@ function checkbox() {
         }
     });
 }
-
-
