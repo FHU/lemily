@@ -125,7 +125,7 @@ p {
     /* background-image: linear-gradient(355.5deg, var(--light-white) 0 50%, var(--maroon) 50% 100%); */
     height: 200%;
     width: 70%;
-    transform: skew(11deg, -7deg) translateX(10%);
+    transform: skew(14deg, -22deg) translateX(10%);
     margin-top: -7%;
     border: 2px solid var(--maroon);
 }
@@ -147,6 +147,15 @@ p {
     font-size: 3rem;
 }
 
+p {
+    /* color: orange; */
+    visibility: visible;
+}
+
+.box p {
+    /* color: orange; */
+    
+}
 
 
 /* Stats */
@@ -225,4 +234,47 @@ p {
     margin-bottom: 20px;
     color: var(--maroon);
     text-shadow: 0 0 3px var(--light-white), 0 0 5px var(--light-white);
+}
+
+.mission p {
+    color: orange;
+    font-weight: 600;
+}
+
+@media(min-width: 1000px) { 
+    .box p {
+        padding-left: 20px;
+        padding-bottom: 50px;
+    }
+
+    .box h1 {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .box p , .box2 p {
+        visibility: hidden;
+    }
+
+    .weAre h1 {
+        font-size: 5rem;
+    }
+
+    .weAre img {
+        height: 15vh;
+    }
+
+    .circles {
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .circle {
+        width: 400px;
+    }
+
 }
